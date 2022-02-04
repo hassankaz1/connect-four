@@ -1,0 +1,65 @@
+/* game board table */
+/* attaching a full window image in background of browser */
+body{
+  background-image: url(https://i.etsystatic.com/22648938/r/il/01ec07/2346076869/il_fullxfull.2346076869_2ajh.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  font-size: 60px;
+  text-shadow: #FC0 1px 0 8px;
+  
+}
+h2 {
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  font-size: 40px;
+  text-shadow: #FC0 1px 0 8px;
+  
+}
+/* centering the board inside the game div */
+#game{
+  justify-content: center;
+  display: flex;
+}
+
+#board td {
+  width: 90px;
+  height: 90px;
+  border: solid 1px rgb(0, 0, 0);
+
+}
+
+
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  /* making circles */
+  border-radius: 50%;
+  
+}
+
+/*change the peices to player 1 or 2 images */
+.piece.p1 {
+  background-image: url(https://m.media-amazon.com/images/I/41YUGlyMoiL.jpg);
+  background-size: cover;
+}
+
+.piece.p2 {
+  background-image: url(https://i5.walmartimages.com/asr/8f5be3be-61e6-413f-93ce-0a529658aea9_1.9f0a1355a44f50942bcecdb4f75cad40.jpeg);
+  background-size: cover;
+}
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
